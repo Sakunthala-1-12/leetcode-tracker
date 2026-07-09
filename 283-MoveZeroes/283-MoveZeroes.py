@@ -1,0 +1,9 @@
+# Last updated: 7/9/2026, 10:10:22 AM
+class Solution:
+    def moveZeroes(self, nums):
+        pos = 0
+
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                nums[pos], nums[i] = nums[i], nums[pos]
+                pos += 1    
